@@ -9,11 +9,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ClockLable: UILabel!
+    @IBOutlet weak var dateLable: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        time()
     }
+    
+    func time(){
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
+            let date = Date()
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "hh:MM a"
+            
+            let currentTime = dateFormatter.string(from: date)
+            
+            dateFormatter.dateFormat = "dd/mm/yyyy"
+            
+            let currentDate = dateFormatter.string(from: date)
+            
+            self.ClockLable.text = currentTime
+            self.dateLable.text = currentDate
+        }
 
+    }
 
 }
 
