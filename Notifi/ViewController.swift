@@ -16,25 +16,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         time()
     }
-    
+        
     func time(){
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
             let date = Date()
             
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "hh:MM a"
+            dateFormatter.dateFormat = "hh:mm:ss a"
             
             let currentTime = dateFormatter.string(from: date)
             
-            dateFormatter.dateFormat = "dd/mm/yyyy"
+            dateFormatter.dateFormat = "dd/MM/yyyy"
             
             let currentDate = dateFormatter.string(from: date)
             
             self.ClockLable.text = currentTime
-            self.dateLable.text = currentDate
+            self.dateLable.text = currentDate    }
         }
-
+    
+    @IBAction func tapMenu(_ sender: UIBarButtonItem) {
+        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") else { return}
+        present(menuViewController, animated: true)
+        
     }
-
+    
+    
+    
 }
 
