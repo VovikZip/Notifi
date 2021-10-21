@@ -9,6 +9,8 @@ import Foundation
 
 enum MenuType: Int{
     case main
-    case st
+    case toSecond
     case stt
 }
+
+var screen: String = ""

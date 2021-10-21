@@ -31,16 +31,15 @@ class ViewController: UIViewController {
             let currentDate = dateFormatter.string(from: date)
             
             self.ClockLable.text = currentTime
-            self.dateLable.text = currentDate    }
+            self.dateLable.text = currentDate
+        } 
         }
     
     @IBAction func tapMenu(_ sender: UIBarButtonItem) {
-        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") else { return}
-        present(menuViewController, animated: true)
+        guard let FirstSettingController = storyboard?.instantiateViewController(withIdentifier: "FirstSettingController") else { return}
+        present(FirstSettingController, animated: true)
         
     }
-    
-    
     
 }
 

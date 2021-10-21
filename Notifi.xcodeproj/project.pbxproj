@@ -15,7 +15,8 @@
 		F9552B42271ED502001C9E3B /* NotifiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9552B41271ED502001C9E3B /* NotifiTests.swift */; };
 		F9552B4C271ED502001C9E3B /* NotifiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9552B4B271ED502001C9E3B /* NotifiUITests.swift */; };
 		F9552B4E271ED502001C9E3B /* NotifiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9552B4D271ED502001C9E3B /* NotifiUITestsLaunchTests.swift */; };
-		F969B8EA27201F45006E6B14 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969B8E927201F45006E6B14 /* MenuViewController.swift */; };
+		F95DDCA32721754B00EE9540 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95DDCA22721754B00EE9540 /* SecondViewController.swift */; };
+		F95DDCA72721AB8A00EE9540 /* FirstSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95DDCA62721AB8900EE9540 /* FirstSettingController.swift */; };
 		F9D4BD8527206B270027C6E2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4BD8427206B270027C6E2 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +50,8 @@
 		F9552B47271ED502001C9E3B /* NotifiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9552B4B271ED502001C9E3B /* NotifiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifiUITests.swift; sourceTree = "<group>"; };
 		F9552B4D271ED502001C9E3B /* NotifiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifiUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F969B8E927201F45006E6B14 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F95DDCA22721754B00EE9540 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F95DDCA62721AB8900EE9540 /* FirstSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSettingController.swift; sourceTree = "<group>"; };
 		F9D4BD8427206B270027C6E2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +110,6 @@
 				F9552B33271ED501001C9E3B /* Assets.xcassets */,
 				F9552B35271ED501001C9E3B /* LaunchScreen.storyboard */,
 				F9552B2E271ED4FD001C9E3B /* ViewController.swift */,
-				F969B8E927201F45006E6B14 /* MenuViewController.swift */,
 				F9552B38271ED501001C9E3B /* Info.plist */,
 				F9D4BD8427206B270027C6E2 /* Menu.swift */,
 			);
@@ -135,6 +136,8 @@
 		F9552B5A271ED543001C9E3B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F95DDCA62721AB8900EE9540 /* FirstSettingController.swift */,
+				F95DDCA22721754B00EE9540 /* SecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,8 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9552B2F271ED4FD001C9E3B /* ViewController.swift in Sources */,
-				F969B8EA27201F45006E6B14 /* MenuViewController.swift in Sources */,
 				F9D4BD8527206B270027C6E2 /* Menu.swift in Sources */,
+				F95DDCA72721AB8A00EE9540 /* FirstSettingController.swift in Sources */,
+				F95DDCA32721754B00EE9540 /* SecondViewController.swift in Sources */,
 				F9552B2B271ED4FD001C9E3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
