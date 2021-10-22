@@ -105,7 +105,6 @@
         <!--Item-->
         <scene sceneID="X0n-oi-hVd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ao2-3s-dI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="m0G-y0-J40" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="s5s-aJ-in4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6IP-Iz-Kqt">
@@ -116,6 +115,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="goo-UQ-u4J"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ao2-3s-dI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1564" y="957"/>
         </scene>
