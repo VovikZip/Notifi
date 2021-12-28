@@ -38,8 +38,20 @@ class ViewController: UIViewController {
     @IBAction func tapMenu(_ sender: UIBarButtonItem) {
         guard let FirstSettingController = storyboard?.instantiateViewController(withIdentifier: "FirstSettingController") else { return}
         present(FirstSettingController, animated: true)
-        
     }
     
+    func showAlert() {
+            let alert = UIAlertController(title: "Your timeless", message: "\(result)", preferredStyle: .alert)
+            
+            let action =  UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+        }
+    
+    @IBAction func timelessButton(_ sender: Any) {
+        timeless()
+        showAlert()
+    }
 }
 

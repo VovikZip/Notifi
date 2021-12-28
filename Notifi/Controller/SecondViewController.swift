@@ -11,14 +11,17 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("s")
 
         // Do any additional setup after loading the view.
     }
     
 
-    //@IBAction func secondTapMenu(_ sender: UIBarButtonItem) {
-    //    guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") else { return}
-    //    present(menuViewController, animated: true)    }
-
+    
+    @IBAction func test(_ sender: UIDatePicker) {
+        print(sender.date)
+        
+    }
+    
    
 }
